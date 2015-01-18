@@ -56,5 +56,9 @@ app.use(function(err, req, res, next) {
     });
 });
 
+var port = process.env.PORT || 3000;
+app.listen(port, function() {
+    console.log('App is running on http://localhost:' + port);
+});
 
 module.exports = app;
